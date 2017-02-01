@@ -55,7 +55,7 @@ var currentY = null;
 };
 
 
-    var app = angular.module('monitor-module', ["chart.js","uiGmapgoogle-maps"]);
+    var app = angular.module('monitor-module', ["chart.js"]);
    
 
  app.controller('BarCtrl', ['$scope','$timeout', function($scope,$timeout) {

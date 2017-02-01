@@ -1,0 +1,45 @@
+  <div class = 'col-lg-3 col-md-4 col-sm-4 col-xs-5  inline'>
+              <div  class="card panel-monitor">
+                <div class="panel-heading">
+                    <div role="group" class="btn-group grup-button-right">
+                      <button type="button" class="grup-menu-colum btn-ms">
+                        <span aria-hidden="true" class="glyphicon glyphicon-tasks"></span>
+                      </button>
+                     </div>
+                     <div role="group" class="btn-group ">
+                        <h2 buttons="no" class="panel-title ">Jarden 1 </h2>
+                      </div>
+                          <span class="label label-danger">Peligro</span>
+                      
+                   </div>
+                   <div class='panel-body' ng-controller="BarCtrl as barctr">
+                   
+                    <div class ='li-monitor'>
+                       <small>Temperatura</small>
+                       
+                       <div class="unit-measure font-bold text-success">C <i class="fa fa-bolt"></i></div>
+                      <canvas id="bar" width="210" height="60" class="chart chart-bar" chart-data="tempChart.data" chart-labels="tempChart.labels" chart-options="tempChart.options"  chart-dataset-override="tempChart.datasetOverride" chart-colors="tempChart.colors"> chart-series="series"
+                     </canvas>
+                     
+                   
+                      </div>
+                <div class ='li-monitor'>
+                       <small>Acelerometro</small>
+                       <div class="unit-measure font-bold text-success">X,Y,Z</div>
+                         
+                        
+                         <canvas id="bar"  width="210" height="60" class="chart chart-bar" chart-data="barChart.data" chart-labels="barChart.labels" chart-options="barChart.options"  chart-dataset-override="barChart.datasetOverride" chart-colors="barChart.colors"> chart-series="series"
+                     </canvas>
+                     
+                      </div>
+                    <div class ='li-monitor'>
+                      <small>Voltaje</small>
+                      <div class="unit-measure font-bold text-success">Vlt <i class="fa fa-bolt"></i></div>
+                   <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+                     </div>
+               
+                   </div>
+                </div>
+                
+                
+            </div>
